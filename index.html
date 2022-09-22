@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area de Teste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="buttonCreator">
+    <form id="controles">
+      <label for="texto">Texto</label>
+      <input type="text" name="texto" id="texto">
+
+      <label for="color">Cor</label>
+      <input type="color" name="color" id="color">
+
+      <label for="backgroundColor">Background-Color</label>
+      <input type="color" name="backgroundColor" id="backgroundColor">
+
+      <label for="height">Height</label>
+      <input type="range" name="height" id="height" min="0" max="200">
+
+      <label for="width">Width</label>
+      <input type="range" name="width" id="width" min="0" max="600">
+
+      <label for="borderType">Estilo da Borda</label>
+      <select name="borderType" id="borderType">
+        <option value="none">none</option>
+        <option value="solid">solid</option>
+        <option value="dashed">dashed</option>
+        <option value="dotted">dotted</option>
+        <option value="outset">outset</option>
+        <option value="inset">inset</option>
+        <option value="double">double</option>
+        <option value="groove">groove</option>
+        <option value="ridge">ridge</option>
+      </select>
+
+      <label for="borderColor">Cor da Borda</label>
+      <input type="color" name="borderColor" id="borderColor">
+
+      <label for="border">Espessura da Borda</label>
+      <input type="range" name="border" id="border" min="0" max="10">
+
+      <label for="fontSize">Tamanho da Fonte</label>
+      <input type="number" name="fontSize" id="fontSize" min="0" max="10">
+    </form>
+  </section>
+
+  <button class="">clique</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
