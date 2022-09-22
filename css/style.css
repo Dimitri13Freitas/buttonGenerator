@@ -1,0 +1,50 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #cccccc;
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
+}
+label {
+  display: block;
+  margin: 1rem 0 0.3rem 0;
+}
+input {
+  display: block;
+}
+
+/* Container */
+.buttonCreatorContainer {
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+  grid-template-columns: 400px 1fr;
+}
+#controles > div {
+  font-size: 0.875rem;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 30px;
+}
+.borda {
+  border-right: rgba(0, 0, 0, 0.2) solid 2px;
+}
+.css {
+  font-family: "IBM Plex Mono", monospace;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.css span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+#texto {
+  width: 85%;
+}
