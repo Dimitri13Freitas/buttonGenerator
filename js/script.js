@@ -49,4 +49,32 @@ function handleChange(event) {
   const nome = event.target.name;
   const valor = event.target.value;
   handleStyle[nome](valor);
+  showCss();
+  saveValues(nome, valor);
+};
+
+function saveValues(nome, value) {
+  localStorage[nome] = (value);
+};
+
+function setValues() {
+  const properties = Object.keys(localStorage);
+  properties.forEach(e => {
+    handleStyle[e](localStorage[e]);
+    controles.elements[e].value = localStorage[e];
+    console.log(localStorage);
+  });
+  showCss();
+};
+
+setValues();
+
+function showCss() {
+  cssText.innerHTML = '<span>' + btn.style.cssText.split('; ').join(';</span><span>');
+};
+
+
+const teste = {
+  seila:'sexo',
+  penis:3,
 }
